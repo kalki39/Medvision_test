@@ -22,7 +22,7 @@ body,
 .instructors-three,
 .instructor-card-three__image::after,
 .client-carousel {
-  background-color: var(--eduhive-black2);
+  background-color: var(--eduhive-black2) !important;
 }
 
 .sticky-header--cloned.sticky-header--three,

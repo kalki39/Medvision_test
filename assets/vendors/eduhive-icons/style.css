@@ -226,3 +226,6 @@
 .icon-check-2:before {
   content: "\e92f";
 }
+.icon-test:before {
+  content: "\e9b8";
+}

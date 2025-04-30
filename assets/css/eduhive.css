@@ -398,8 +398,8 @@ h6 {
 }
 @media (max-width: 575px) {
   .section-space {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1678,6 +1678,7 @@ a:hover .instructor-card-two__social__icon {
 .instructor-card-three__image {
   position: relative;
   padding: 15px;
+  padding-top: 0px;
   width: 270px;
   height: 316px;
   background-color: var(--eduhive-base, #674CEF);
@@ -1748,11 +1749,12 @@ a:hover .instructor-card-two__social__icon {
   transition: all 500ms ease;
 }
 .instructor-card-three__image__inner img {
+  padding-top: 30px;
   width: 100%;
   display: block;
 }
 .instructor-card-three:hover .instructor-card-three__image__inner::after {
-  opacity: 1;
+  /* opacity: 1; */
 }
 .instructor-card-three__social {
   position: absolute;
@@ -2102,7 +2104,8 @@ a:hover .instructor-card-two__social__icon {
 }
 .course-card {
   position: relative;
-  padding: 30px 30px 0;
+  padding: 30px 30px;
+  cursor: pointer;
   border-radius: 20px;
   background-color: var(--eduhive-white, #FFFFFF);
   box-shadow: 0px 4px 60px rgba(30, 21, 75, 0.1);
@@ -5513,7 +5516,11 @@ body.megamenu-popup-active .mobile-nav__content {
   position: relative;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: var(--eduhive-white, #FFFFFF);
+  background-color: var(--eduhive-black, #FFFFFF);
+}
+
+.client-carousel h4{
+  color: var(--eduhive-white);
 }
 @media (max-width: 575px) {
   .client-carousel {
@@ -5638,6 +5645,7 @@ body.megamenu-popup-active .mobile-nav__content {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 57px;
 }
 @media (max-width: 991px) {
@@ -9384,6 +9392,9 @@ li:hover .contact-page__info__icon__inner {
   height: 1em;
   fill: currentColor;
 }
+.course-details__requirements{
+  margin-bottom: 23px;
+}
 .course-details__accordion {
   margin-top: 31px;
 }
@@ -10780,8 +10791,8 @@ li:hover .contact-page__info__icon__inner {
 }
 @media (min-width: 1200px) {
   .testimonial-card-three__content {
-    -webkit-mask: url('data:image/svg+xml;utf8,<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900.000000 900.000000"><g transform="translate(0.000000,900.000000) scale(0.100000,-0.100000)" stroke="none"> <path d="M577 8986 c-3 -8 -23 -18 -44 -21 -21 -4 -84 -29 -139 -56 -191 -93 -323 -256 -380 -467 -22 -82 -21 -7823 1 -7909 8 -32 35 -99 61 -150 91 -181 257 -314 462 -369 82 -22 7823 -21 7909 1 102 26 237 101 313 174 102 100 182 235 205 349 4 18 13 36 21 39 21 8 21 5173 0 5173 -9 0 -18 19 -25 53 -7 28 -29 88 -51 132 -97 195 -285 339 -505 387 -32 7 -331 13 -830 17 -762 6 -781 7 -840 28 -33 12 -74 27 -90 35 -58 25 -172 107 -218 157 -47 50 -137 181 -137 199 0 6 -6 23 -14 39 -50 98 -50 91 -56 868 -7 728 -8 756 -44 851 -78 211 -287 402 -486 445 -31 7 -50 16 -50 25 0 21 -5055 21 -5063 0z"/></g></svg>');
-    mask: url('data:image/svg+xml;utf8,<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900.000000 900.000000"><g transform="translate(0.000000,900.000000) scale(0.100000,-0.100000)" stroke="none"> <path d="M577 8986 c-3 -8 -23 -18 -44 -21 -21 -4 -84 -29 -139 -56 -191 -93 -323 -256 -380 -467 -22 -82 -21 -7823 1 -7909 8 -32 35 -99 61 -150 91 -181 257 -314 462 -369 82 -22 7823 -21 7909 1 102 26 237 101 313 174 102 100 182 235 205 349 4 18 13 36 21 39 21 8 21 5173 0 5173 -9 0 -18 19 -25 53 -7 28 -29 88 -51 132 -97 195 -285 339 -505 387 -32 7 -331 13 -830 17 -762 6 -781 7 -840 28 -33 12 -74 27 -90 35 -58 25 -172 107 -218 157 -47 50 -137 181 -137 199 0 6 -6 23 -14 39 -50 98 -50 91 -56 868 -7 728 -8 756 -44 851 -78 211 -287 402 -486 445 -31 7 -50 16 -50 25 0 21 -5055 21 -5063 0z"/></g></svg>');
+    /* -webkit-mask: url('data:image/svg+xml;utf8,<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900.000000 900.000000"><g transform="translate(0.000000,900.000000) scale(0.100000,-0.100000)" stroke="none"> <path d="M577 8986 c-3 -8 -23 -18 -44 -21 -21 -4 -84 -29 -139 -56 -191 -93 -323 -256 -380 -467 -22 -82 -21 -7823 1 -7909 8 -32 35 -99 61 -150 91 -181 257 -314 462 -369 82 -22 7823 -21 7909 1 102 26 237 101 313 174 102 100 182 235 205 349 4 18 13 36 21 39 21 8 21 5173 0 5173 -9 0 -18 19 -25 53 -7 28 -29 88 -51 132 -97 195 -285 339 -505 387 -32 7 -331 13 -830 17 -762 6 -781 7 -840 28 -33 12 -74 27 -90 35 -58 25 -172 107 -218 157 -47 50 -137 181 -137 199 0 6 -6 23 -14 39 -50 98 -50 91 -56 868 -7 728 -8 756 -44 851 -78 211 -287 402 -486 445 -31 7 -50 16 -50 25 0 21 -5055 21 -5063 0z"/></g></svg>');
+    mask: url('data:image/svg+xml;utf8,<svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900.000000 900.000000"><g transform="translate(0.000000,900.000000) scale(0.100000,-0.100000)" stroke="none"> <path d="M577 8986 c-3 -8 -23 -18 -44 -21 -21 -4 -84 -29 -139 -56 -191 -93 -323 -256 -380 -467 -22 -82 -21 -7823 1 -7909 8 -32 35 -99 61 -150 91 -181 257 -314 462 -369 82 -22 7823 -21 7909 1 102 26 237 101 313 174 102 100 182 235 205 349 4 18 13 36 21 39 21 8 21 5173 0 5173 -9 0 -18 19 -25 53 -7 28 -29 88 -51 132 -97 195 -285 339 -505 387 -32 7 -331 13 -830 17 -762 6 -781 7 -840 28 -33 12 -74 27 -90 35 -58 25 -172 107 -218 157 -47 50 -137 181 -137 199 0 6 -6 23 -14 39 -50 98 -50 91 -56 868 -7 728 -8 756 -44 851 -78 211 -287 402 -486 445 -31 7 -50 16 -50 25 0 21 -5055 21 -5063 0z"/></g></svg>'); */
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     -webkit-mask-position: center center;
@@ -16347,3 +16358,49 @@ body.boxed-wrapper .main-footer__shape-five {
   }
 }
 /*# sourceMappingURL=eduhive.css.map */
+
+
+/* Own css */
+
+.f12{
+  font-size: 12px;
+}
+
+.client_logo{
+  transition: all 0.4s ease-in-out;
+  scale: 1.1;
+}
+
+/* .client_logo:hover{
+  scale: 1.5;
+} */
+
+.pI20 .owl-stage{
+  padding-inline: 20px;
+}
+
+.gc{
+  grid-template-columns: 0px auto;
+}
+
+.sameheight{
+  display: block;
+  min-height: 58px;
+}
+
+.bNone{
+  background: none !important;
+}
+
+.pb20{
+  padding-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+  .main-header__inner {
+    align-items: center;
+    gap: 330px;
+    justify-content: flex-start;
+    /* position: relative; */
+}
+}

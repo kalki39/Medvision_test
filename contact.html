@@ -363,34 +363,40 @@
     <script type="text/javascript">
         (function() {
             // https://dashboard.emailjs.com/admin/account
+            let prodConfig = {
+                serviceID: "medvision_email_service",
+                templateID: "template_v1jbyv6",
+                publicKey: "dEZ5DvqBIHM2ltkFy"
+            }
             emailjs.init({
-              publicKey: "aakFn491_u6JMjo4J",
+              publicKey: "dEZ5DvqBIHM2ltkFy",
             });
         })();
     </script>
     <script type="text/javascript">
-        // window.onload = function() {
-        //     document.getElementById('contact-page__form').addEventListener('submit', function(event) {
-        //         event.preventDefault();
-        //         // these IDs from the previous steps
-        //         emailjs.sendForm('service_h1gigm8', 'template_p7132q8', this)
-        //             .then(() => {
-        //                 console.log('SUCCESS!');
-        //             }, (error) => {
-        //                 console.log('FAILED...', error);
-        //             });
-        //     });
-        // }
+        
         (function(){
-            emailjs.init("aakFn491_u6JMjo4J");
+            emailjs.init("dEZ5DvqBIHM2ltkFy");
             })();
 
+            let devConfig = {
+                serviceID: "service_h1gigm8",
+                templateID: "template_im1mq3w",
+                publicKey: "aakFn491_u6JMjo4J"
+            }
+
+            let prodConfig = {
+                serviceID: "medvision_email_service",
+                templateID: "template_v1jbyv6",
+                publicKey: "dEZ5DvqBIHM2ltkFy"
+            }
+            
             document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            emailjs.sendForm('service_h1gigm8', 'template_im1mq3w', this)
+            emailjs.sendForm(prodConfig.serviceID, prodConfig.templateID, this)
                 .then(function(response) {
-                console.log('SUCCESS!', response.status, response.text);
+                // console.log('SUCCESS!', response.status, response.text);
                 alert("Form submitted successfully! We will contact you soon.");
 
                 document.getElementById('contact-form').reset();

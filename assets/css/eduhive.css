@@ -16399,8 +16399,13 @@ body.boxed-wrapper .main-footer__shape-five {
 @media (min-width: 1200px) {
   .main-header__inner {
     align-items: center;
-    gap: 330px;
+    gap: 350px;
     justify-content: flex-start;
     /* position: relative; */
 }
+}
+
+.logo-style{
+  background-color: white;
+  border-radius: 10px;
 }

@@ -16409,3 +16409,13 @@ body.boxed-wrapper .main-footer__shape-five {
   background-color: white;
   border-radius: 10px;
 }
+
+
+.minH{
+  min-height: 440px;
+}
+
+.ptpb0{
+  padding-top: 0;
+  padding-bottom: 0;
+}

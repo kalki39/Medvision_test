@@ -390,6 +390,10 @@ h6 {
   padding-top: var(--section-space, 120px);
   padding-bottom: var(--section-space, 120px);
 }
+.section-space3 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 @media (max-width: 767px) {
   .section-space {
     padding-top: 100px;
@@ -16395,6 +16399,17 @@ body.boxed-wrapper .main-footer__shape-five {
 .pb20{
   padding-bottom: 20px;
 }
+.pb30{
+  padding-bottom: 30px;
+}
+
+.pt10{
+  padding-top: 10px;
+}
+.ptpb10{
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
 
 @media (min-width: 1200px) {
   .main-header__inner {
@@ -16418,4 +16433,17 @@ body.boxed-wrapper .main-footer__shape-five {
 .ptpb0{
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.mb40{
+  margin-bottom: 40px;
+}
+.mb0{
+  margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+  .newFont14 li{
+    font-size: 14px;
+  }
 }
